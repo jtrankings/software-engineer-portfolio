@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,73 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+@import "tailwindcss";
+
+
+
+p,
+h1 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  /* overflow-y: hidden; */
+  background: #020024;
+  background: linear-gradient(14deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 15%, rgba(0, 212, 255, 1) 100%);
+  /* font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif; */
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  margin-top: 3rem;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+    max-height: max-content;
+    width: 100%;
+    position: sticky;
+    /* text-shadow: -1px -1px 0 #b8b3b3, 1px -1px 0 #b8b3b3, -1px 1px 0 #b8b3b3, 1px 1px 0 #b8b3b3; */
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3rem; */
+
+    .bodyTitle {
+      display: flex;
+      gap: 4rem;
+      padding: 3rem;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .bodyTitleLeft {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .bodyContent {
+      display: flex;
+      padding: 3rem;
+      width: 100%;
+
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
 }
